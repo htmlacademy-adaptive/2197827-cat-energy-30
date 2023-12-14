@@ -40,30 +40,30 @@
       </div>
     </nav>
   </header>
-  <main class="main-form">
+  <main class="main-form form">
     <h2 class="form__title title">Подбор программы</h2>
     <p class="form__note">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="filter">
+    <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="filter__group">
         <legend class="filter__title visually-hidden">Данные кота</legend>
-        <ul class="form__list">
-          <li class="form__item">
+        <ul class="filter__list">
+          <li class="filter__item">
             <label for="name">Имя:*</label>
             <input type="text" id="name" name="name" placeholder="Барсик" required>
           </li>
-          <li class="form__item">
+          <li class="filter__item">
             <label for="weight">Вес (кг):*</label>
             <input type="number" name="weight" placeholder="7" id="weight" min="1" required>
           </li>
-          <li class="form__item">
+          <li class="filter__item">
             <label for="age">Возраст (лет):</label>
             <input type="number" name="age" placeholder="7" id="age" min="1" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter">
+      <fieldset class="filter__group">
         <legend class="filter__title visually-hidden">Выбор вида программы коррекции веса</legend>
-        <ul class="filter__list control__list list-reset">
+        <ul class="filter__list control list-reset">
           <li class="control__item">
             <label class="control">
               <input class="control__input visually-hidden" type="radio" name="program" value="slim" checked>
@@ -87,25 +87,25 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class=" filter__other">
+      <fieldset class="filter__other">
         <legend class="filter__title">Контактные данные (владельца кота)</legend>
-        <ul class="form__list form__list--other">
-          <li class="form__item">
+        <ul class="filter__list form__list--other">
+          <li class="filter__item">
             <label for="email">E-mail:*</label>
             <input type="email" name="mail" placeholder="кuklachev@gmail.com" id="email" required>
           </li>
-          <li class="form__item">
+          <li class="filter__item">
             <label for="number">Телефон:*</label>
             <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" maxlength="21" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter filter__other">
+      <fieldset class="filter__other">
         <legend class="filter__title">Комментарий</legend>
         <label for="message"></label>
         <textarea name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
       </fieldset>
-      <fieldset class="filter filter__other">
+      <fieldset class="filter__other">
         <legend class="filter__title">Дополнительно</legend>
         <ul class="filter__list control__list list-reset">
           <li class="control__item">
@@ -142,7 +142,7 @@
       <p class="note-text">* — Обязательные поля</p>
     </form>
     <section class="contacts">
-      <h2 class="visually-hidden">Наш адрес</h2>
+      <h2 class="contacts__title visually-hidden">Наш адрес</h2>
       <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
       <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
       <span class="contacts__text">Санкт-Петербург</span>
